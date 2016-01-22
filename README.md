@@ -12,14 +12,12 @@ wget https://raw.githubusercontent.com/nealyg/one-key-vpn-server/master/one_key_
 
 #### 以管理员身份运行
 
-支持使用自己的私钥和根证书，如果有需要，请在运行脚本之前将私钥命名为ca.pem、根证书命名为ca.cert.pem，放到脚本所在目录。
-
-脚本执行过程中，根据提示输入相关设置并回传即可。
-
 ```bash
 chmod +x one_key_setup_IPSEC_IKEV2_VPN.sh #赋予脚本执行权限
 bash one-key-ikev2.sh
 ```
+支持使用自己的私钥和根证书，如果有需要，请在运行脚本之前将私钥命名为ca.pem、根证书命名为ca.cert.pem，放到脚本所在目录。    
+脚本执行过程中，根据提示输入相关设置并回传即可。
 
 > Tips:    
 > 脚本会提示选择VPS主机架构（OpenVZ还是Xen、KVM），如果是普通服务器，选1即可，如果是VPS主机必须正确选择架构才能正常安装。    
